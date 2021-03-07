@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background-color: #121212;
+  padding: 1rem 8rem;
+  z-index: 9999;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #ffffff;
+  font-size: 1.1rem;
+  padding: 0rem 0.8rem;
+}
+
+.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:active {
+  color: #00bf85;
+}
+
+.navbar button {
+  font-weight: 500;
+  padding: 0.4rem 1.4rem;
+  background-color: transparent !important;
+  border-color: #00bf85 !important;
+  color: #ffffff !important;
+  position: relative;
+}
+
+.navbar button:before {
+  content: '';
+  position: absolute;
+  background-color: #00bf85;
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.navbar button:hover::before {
+  width: 100%;
+}
+
+#header-content {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#header-content video {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#header-content .hero-content {
+  position: relative;
+}
+
+#header-content .hero-content p {
+  width: 55%;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  padding-bottom: 1rem;
+}
+
+#header-content .hero-content a {
+  background-color: #00bf85;
+  font-weight: 500;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 0.6rem 1.4rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #121212;
+}
+
+#header-content .hero-content a:hover {
+  background: #ffffff;
+  color: #121212;
+}
+
+#about-section {
+  background-color: #121212;
+}
+
+#about-section .left-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: auto;
+}
+
+#about-section .left-content h6 {
+  color: #00bf7f;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+#about-section .left-content h2 {
+  color: #00bf7f;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #f7f5f4;
+}
+
+#about-section .left-content p {
+  color: #00bf7f;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #f7f5f4;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+#about-section .left-content a {
+  background-color: #00bf85;
+  font-weight: 500;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 0.6rem 1.4rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #121212;
+}
+
+#about-section .left-content a:hover {
+  background: #ffffff;
+  color: #121212;
+}
+
+#dis-section {
+  background-color: #ffffff;
+}
+
+#dis-section .left-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: auto;
+}
+
+#dis-section .left-content h6 {
+  color: #00bf7f;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #121212;
+}
+
+#dis-section .left-content h2 {
+  color: #00bf7f;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #121212;
+}
+
+#dis-section .left-content p {
+  color: #00bf7f;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #121212;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+#dis-section .left-content a {
+  background-color: #00bf85;
+  font-weight: 500;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 0.6rem 1.4rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #121212;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+#dis-section .left-content a:hover {
+  background: #ffffff;
+  color: #121212;
+}
+
+#dis-section .left-content a:hover {
+  background-color: #00bf85;
+}
+
+#service-section {
+  background-color: #121212;
+}
+
+#service-section .single-card {
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: 5px;
+}
+
+#signin-section {
+  background-color: #ffffff;
+}
+
+#signin-section .left-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: auto;
+}
+
+#signin-section .left-content h6 {
+  color: #00bf7f;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+#signin-section .left-content h2 {
+  color: #00bf7f;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #121212;
+}
+
+#signin-section .left-content p {
+  color: #00bf7f;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #121212;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+#signin-section .left-content a {
+  background-color: #00bf85;
+  font-weight: 500;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 0.6rem 1.4rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #121212;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+#signin-section .left-content a:hover {
+  background: #ffffff;
+  color: #121212;
+}
+
+#signin-section .left-content a:hover {
+  background-color: #00bf85;
+}
+
+footer .sub-btn {
+  font-weight: 500;
+  padding: 0.4rem 1.4rem;
+  background-color: transparent !important;
+  border-color: #00bf85 !important;
+  color: #ffffff !important;
+  position: relative;
+}
+
+footer .sub-btn:before {
+  content: '';
+  position: absolute;
+  background-color: #00bf85;
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+footer .sub-btn:hover::before {
+  width: 100%;
+}
+
+footer .sub-btn:hover {
+  background: #00bf85 !important;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding: 0.8rem 0;
+  }
+  .hero-content h2 {
+    font-size: 2rem;
+    padding: 10px;
+  }
+  .hero-content p {
+    width: 80% !important;
+    font-size: 1rem !important;
+  }
+  .hero-content a {
+    background-color: #00bf85;
+    font-weight: 500;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 0.6rem 1.4rem;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    color: #121212;
+    font-size: 0.9rem;
+  }
+  .hero-content a:hover {
+    background: #ffffff;
+    color: #121212;
+  }
+}
+/*# sourceMappingURL=main.css.map */

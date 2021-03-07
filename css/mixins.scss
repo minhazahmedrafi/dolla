@@ -1,0 +1,46 @@
+
+@mixin btn2 {
+    background-color: $hoverColor;
+    font-weight: 500;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 0.6rem 1.4rem;
+    transition: 0.3s ease;
+    color: $bgColor;
+    &:hover{
+        background: $whiteColor;
+        color: $bgColor;
+    }
+}
+
+@mixin btn {
+    font-weight: 500;
+    padding: 0.4rem 1.4rem;
+    background-color: transparent !important;
+    border-color: $hoverColor !important;
+    color: $whiteColor !important;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        background-color: $hoverColor;
+        color: $whiteColor;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0%;
+        z-index: -1;
+        transition: 0.5s ease;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+}
+@mixin heading {
+    color: $headingColor;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
